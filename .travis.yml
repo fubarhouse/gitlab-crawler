@@ -8,7 +8,7 @@ sudo: required
 services:
   - docker
 
-before_script:
+before_install:
   - sudo apt-get update -q
   - sudo apt-get -y install docker-compose
   - sudo docker pull gitlab/gitlab-ce
