@@ -1,0 +1,17 @@
+language: go
+
+go:
+  - "1.10.x"
+
+sudo: required
+
+services:
+  - docker
+
+before_script:
+  - sudo apt-get update -q
+  - sudo apt-get -y install docker-compose
+  - sudo docker-compose up -d
+
+script:
+  - go test -v ./...
