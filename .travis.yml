@@ -9,7 +9,7 @@ services:
   - docker
 
 env:
-  - DOCKER_COMPOSE_VERSION=1.4.2
+  - DOCKER_COMPOSE_VERSION=1.21.2
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
@@ -17,8 +17,6 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
 
-before_script:
-  - docker-compose up -d
-
 script:
+  - docker compose up -d
   - go test -v ./...
