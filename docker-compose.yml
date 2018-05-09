@@ -1,0 +1,8 @@
+gitlabtest:
+  image: 'gitlab/gitlab-ce:latest'
+  hostname: 'gitlab.example.com'
+  environment:
+    GITLAB_OMNIBUS_CONFIG: "gitlab_rails['initial_root_password'] = 'testpassword';"
+  ports:
+    - '80:80'
+    - '2222:22'
