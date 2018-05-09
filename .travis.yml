@@ -18,5 +18,5 @@ before_install:
   - sudo mv docker-compose /usr/local/bin
 
 script:
-  - docker compose up -d
+  - sudo docker-compose up -d
   - go test -v ./...
