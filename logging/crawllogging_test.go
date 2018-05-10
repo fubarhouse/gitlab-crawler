@@ -40,13 +40,13 @@ func TestColorRed(t *testing.T) {
 }
 
 func TestColorGreen(t *testing.T) {
-	LogInfo(ColorRed("TEST GREEN"))
+	LogInfo(ColorGreen("TEST GREEN"))
 }
 
 func TestColorYellow(t *testing.T) {
-	LogInfo(ColorRed("TEST YELLOW"))
+	LogInfo(ColorYellow("TEST YELLOW"))
 }
 
 func TestColorBlue(t *testing.T) {
-	LogInfo(ColorRed("TEST BLUE"))
+	LogInfo(ColorBlue("TEST BLUE"))
 }
