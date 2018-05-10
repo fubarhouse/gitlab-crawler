@@ -10,6 +10,7 @@ services:
 
 before_install:
   - docker-compose up -d
+  - sleep 60
 
 script:
   - go test -v ./...
