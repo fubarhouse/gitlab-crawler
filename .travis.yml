@@ -8,9 +8,8 @@ sudo: false
 services:
   - docker
 
-env:
-  - DOCKER_COMPOSE_VERSION=1.21.2
+before_install:
+  - docker-compose up -d
 
 script:
-  - docker-compose up -d
   - go test -v ./...
