@@ -10,7 +10,7 @@ services:
 
 before_install:
   - docker-compose up -d
-  - sleep 60
+  - sleep 120 # todo: write detection script
 
 script:
   - go test -v ./...
